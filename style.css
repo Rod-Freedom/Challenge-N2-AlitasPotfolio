@@ -1,0 +1,290 @@
+:root {
+    --fontfam: 'Roboto', sans-sherif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    min-height: 100vh;
+}
+
+.whole-header {
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+}
+
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1vh 2vw;
+}
+
+.disclaimer {
+    background-color: black;
+    text-align: center;
+    margin: 0;
+    font-family: var(--fontfam);
+    font-weight: 100;
+    color: white;
+    padding: .1vh 0;
+    height: fit-content;
+}
+
+.title {
+    max-width: 60%;
+    aspect-ratio: auto;
+}
+
+.navmenu {
+    font-family: var(--fontfam);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3vh;
+    min-width: 20vw;
+    text-align: center;
+}
+
+.navlink {
+    padding: 0 2vw;
+    font-size: 1.5rem;
+    background-image: linear-gradient(#000 0 0);
+    background-size: 0% .4vh;
+    transition: all .2s;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: black;
+    text-decoration: none;
+}
+
+.navlink:hover {
+    background-image: linear-gradient(chocolate 0 0);
+    background-size: 80% .4vh;
+    color: chocolate;
+}
+
+.cover {
+    width: 100%;
+    height: 30vh;
+    background-image: url(./Assets/Images/AlitaCoverPic.png);
+    background-size: cover;
+    background-position: center right;
+    position: relative;
+}
+
+.quote {
+    font-size: 2vw;
+    background-color: rgb(210, 105, 30, .3);
+    color: white;
+    position: absolute;
+    font-family: var(--fontfam);
+    bottom: 5%;
+    left: 10%;
+    padding: 1vh 1vw;
+    border-radius: 1vh;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 2vw;
+    padding: 3vh 5vh;
+}
+
+.sectname {
+    text-align: right;
+    font-family: var(--fontfam);
+    color: chocolate;
+    border-right: .4rem solid chocolate;
+    font-size: 2vh;
+    padding-right: 1vh;
+}
+
+.aboutpgph {
+    font-size: 1.2rem;
+    font-family: var(--fontfam);
+    font-weight: 200;
+}
+
+.work {
+    display: grid;
+    gap: 2vw;
+
+}
+
+.ability {
+    position: relative;
+    border: 1rem solid lightslategrey;
+    background-size: cover;
+    background-position: center;
+}
+
+.abilities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 2fr ;
+    gap: 2vw;
+}
+
+.filter {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    background-color: rgb(210, 105, 30, 0);
+    position: absolute;
+}
+
+.filter:hover {
+    background-color: rgb(210, 105, 30, .6);
+}
+
+.topic {
+    background-color: lightslategrey;
+    color: white;
+    font-size: 2rem;
+    font-family: var(--fontfam);
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    padding: 3vh;
+}
+
+.hacking {
+    min-height: 60vh;
+    background-image: url(./Assets/Images/hacking.jpg);
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+}
+
+.panzer {
+    background-image: url(./Assets/Images/panzer.jpg);
+    grid-column: 1 / 2;
+    grid-row: 3 / 5;
+}
+
+.plasma {
+    background-image: url(./Assets/Images/plasma.jpg);
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.music {
+    background-image: url(./Assets/Images/music.jpg);
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.closure {
+    background-color: chocolate;
+    color: white;
+    margin: auto 0 0;
+    padding: 2vh 0;
+    width: 100%;
+    text-align: center;
+    font-family: var(--fontfam);
+
+}
+
+@media screen and (max-width: 600px) {    
+    .disclaimer {
+        font-size: 1.1vh;
+    }
+
+    .navmenu {
+        flex-direction: column;
+    }
+
+    .sectname {
+        font-size: 1vh;
+        border-right: .3rem solid chocolate;
+    }
+
+    .aboutpgph {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .topic {
+        font-size: 1rem;
+        padding: 2vh;
+    }
+
+    .section {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        gap: 2vw;
+        padding: 2vh 2vh;
+    }
+
+    .ability {
+        grid-column: 1 / -1;
+        min-height: 30vh;
+    }
+
+    .hacking {
+        grid-row: 1 / 2;
+    }
+    
+    .panzer {
+        grid-row: 2 / 3;
+    }
+    
+    .plasma {
+        grid-row: 3 / 4;
+    }
+    
+    .music {
+        grid-row: 4 / 5;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .site-header {
+        flex-direction: column;
+        padding: 1vh 0 0;
+    }
+
+    .navmenu {
+        background-color: black;
+        color: white;
+        margin: 2vh 0 0;
+        width: 100%;
+        padding: 1vh 0;
+        font-size: 2.5vh;
+    }
+
+    .navlink {
+        font-size: 2vh;
+        color: white;
+    }
+
+    .cover {
+        height: 20vh;
+    }
+
+    .quote {
+        font-size: 4vw;
+    }
+
+    .contact {
+        background-color: white;
+    }
+
+    .contact .navlink {
+        color: black;
+
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .disclaimer {
+        font-size: 1.5vh;
+    }
+}
