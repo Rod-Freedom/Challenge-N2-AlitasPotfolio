@@ -28,7 +28,7 @@ I wanted to test everything I've learned so far in CSS and HTML and I've learned
 
 ## **USAGE**
 
-The site will respond to your device size. All the clickable elements in the site (links) have an interactive animation (on hover), so you'll know when something is clickable. Scroll along and have fun!
+The site will respond to your device size. All the clickable elements in the site (links) have an interactive animation (on hover), so you'll know when something is clickable. Scroll along and have fun! [Go to site!](https://rod-freedom.github.io/Challenge-N2-AlitasPotfolio/)
 
 ![Alita's Portfolio Demo](./Assets/GIFs/AlitasPortfolio.GIF)
 
